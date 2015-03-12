@@ -64,14 +64,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ApplicationCpp.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Form.cpp" />
+    <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Program.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Control.h" />
     <ClInclude Include="Form.h" />
+    <ClInclude Include="Form1.h" />
+    <ClInclude Include="Point.h" />
     <ClInclude Include="Program.h" />
+    <ClInclude Include="Size.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

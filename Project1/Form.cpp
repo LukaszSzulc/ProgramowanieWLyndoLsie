@@ -1,20 +1,18 @@
 ﻿#include "Form.h"
 #include "Application.h"
-Form::Form()
-{
+Form::Form() {
 	InitializeComponent();
 }
 
-Form::~Form()
-{
+Form::~Form() {
 
 }
-LRESULT CALLBACK WndProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)
-{
+LRESULT CALLBACK WndProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
 	return DefWindowProc(hWnd, Msg, wParam, lParam);
 }
-void Form::InitializeComponent()
-{
+void Form::InitializeComponent() {
+	this->Name = "Window";
+	this->Text = "Title";
 	WNDCLASSEX wce;
 	wce.cbSize = sizeof(WNDCLASSEX);
 	wce.style = 0;
@@ -28,14 +26,12 @@ void Form::InitializeComponent()
 	wce.hbrBackground = (HBRUSH)COLOR_WINDOW;
 	wce.lpszClassName = "Window";
 	wce.lpszMenuName = NULL;
-	if (!RegisterClassEx(&wce))
-	{
+	if (!RegisterClassEx(&wce)) {
 		
 		return;
 	}
-	hWnd = CreateWindowEx(WS_EX_CLIENTEDGE, "Window", "Title", WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 320, 240, NULL, NULL, Application::hInstance, NULL);
-	if (hWnd == NULL)
-	{
+	hWnd = CreateWindowEx(WS_EX_CLIENTEDGE, this->Name, this->Text, WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 320, 240, NULL, NULL, Application::hInstance, NULL);
+	if (hWnd == NULL) {
 		return;
 	}
 	ShowWindow(hWnd, Application::nCmdShow);

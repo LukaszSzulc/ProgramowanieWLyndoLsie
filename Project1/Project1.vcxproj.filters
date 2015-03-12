@@ -13,16 +13,37 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\WinToolkit">
+      <UniqueIdentifier>{4b77a9e8-4efe-403a-8a15-b5657304ec9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinToolkit\Forms">
+      <UniqueIdentifier>{f0f0e502-b20f-49bc-a7b1-efba39f1c60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WinToolkit">
+      <UniqueIdentifier>{0b028cc7-79cd-478a-b181-1dbd9c4bc877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WinToolkit\Forms">
+      <UniqueIdentifier>{7ebd23e3-dac8-4fd5-a749-5bc0de0ed695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinToolkit\Drawing">
+      <UniqueIdentifier>{0e09718a-75a2-4e7f-817d-7e31fcc539ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ApplicationCpp.cpp">
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Form1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Form.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\WinToolkit\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\WinToolkit\Forms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -33,7 +54,22 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Form.h">
+      <Filter>Header Files\WinToolkit\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files\WinToolkit\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files\WinToolkit\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Size.h">
+      <Filter>Header Files\WinToolkit\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>Header Files\WinToolkit\Forms</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
