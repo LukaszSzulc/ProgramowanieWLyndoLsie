@@ -1,4 +1,8 @@
 ﻿#include "Application.h"
+#include "Form.h"
+
+using namespace WinToolkit;
+using namespace Forms;
 
 MSG Application::msg;
 HINSTANCE Application::hInstance = NULL;

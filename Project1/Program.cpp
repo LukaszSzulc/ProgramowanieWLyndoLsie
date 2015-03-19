@@ -1,6 +1,8 @@
 #include <Windows.h>
 #include "Program.h"
 #include "Application.h"
+#include "Form1.h"
+
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 	Application::hInstance = hInstance;
 	Application::nCmdShow = nCmdShow;

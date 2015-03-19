@@ -6,10 +6,6 @@
 namespace WinToolkit {
 	namespace Forms {
 		class Form : public Control {
-			private:
-				void InitializeComponent();
-				LPSTR Name;
-				LPSTR Text;
 			public:
 				HWND hWnd;
 				Form();

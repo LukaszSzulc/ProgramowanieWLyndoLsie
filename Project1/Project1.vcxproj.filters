@@ -45,6 +45,12 @@
     <ClCompile Include="Button.cpp">
       <Filter>Source Files\WinToolkit\Forms</Filter>
     </ClCompile>
+    <ClCompile Include="ControlCollection.cpp">
+      <Filter>Source Files\WinToolkit\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>Source Files\WinToolkit\Forms</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Program.h">
@@ -69,6 +75,9 @@
       <Filter>Header Files\WinToolkit\Drawing</Filter>
     </ClInclude>
     <ClInclude Include="Control.h">
+      <Filter>Header Files\WinToolkit\Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlCollection.h">
       <Filter>Header Files\WinToolkit\Forms</Filter>
     </ClInclude>
   </ItemGroup>
